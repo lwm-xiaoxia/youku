@@ -4,6 +4,7 @@ import Home from './pages/home/home.jsx';
 import User from './pages/user/user.jsx';
 import BottomBar from './components/bottomBar';
 import HeadBar from './components/headBar';
+const a = 5;
 const App = () => (
         <React.Fragment>
             <HeadBar></HeadBar>
