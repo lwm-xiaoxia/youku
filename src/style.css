@@ -1,0 +1,251 @@
+/* 
+样式初始化
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 适配不同屏幕 */
+
+@media (min-width: 240px) {
+    html {
+        font-size: 32px;
+    }
+}
+@media (min-width: 320px) {
+    html {
+        font-size: 42.66667px;
+    }
+}
+@media (min-width: 360px) {
+    html {
+        font-size: 48px;
+    }
+}
+@media (min-width: 375px) {
+    html {
+        font-size: 50px;
+    }
+}
+@media (min-width: 384px) {
+    html {
+        font-size: 51.2px;
+    }
+}
+@media (min-width: 411px) {
+    html {
+        font-size: 54.8px;
+    }
+}
+@media (min-width: 414px) {
+    html {
+        font-size: 55.2px;
+    }
+}
+@media (min-width: 424px) {
+    html {
+        font-size: 56.53333px;
+    }
+}
+@media (min-width: 480px) {
+    html {
+        font-size: 64px;
+    }
+}
+@media (min-width: 540px) {
+    html {
+        font-size: 72px;
+    }
+}
+@media (min-width: 640px) {
+    html {
+        font-size: 85.33333px;
+    }
+}
+@media (min-width: 720px) {
+    html {
+        font-size: 96px;
+    }
+}
+@media (min-width: 750px) {
+    html {
+        font-size: 100px;
+    }
+}
+@media (min-width: 768px) {
+    html {
+        font-size: 102.4px;
+    }
+}
+@media (min-width: 800px) {
+    html {
+        font-size: 106.66667px;
+    }
+}
+@media (min-width: 980px) {
+    html {
+        font-size: 130.66667px;
+    }
+}
+@media (min-width: 1024px) {
+    html {
+        font-size: 136.53333px;
+    }
+}
+@media (min-width: 1080px) {
+    html {
+        font-size: 144px;
+    }
+}
+@media (min-width: 1152px) {
+    html {
+        font-size: 153.6px;
+    }
+}
+@media (min-width: 1366px) {
+    html {
+        font-size: 182.13333px;
+    }
+}
+@media (min-width: 1440px) {
+    html {
+        font-size: 192px;
+    }
+}
+@media (min-width: 2160px) {
+    html {
+        font-size: 288px;
+    }
+}
+
+
+
+/* 底部栏组件 */
+.bottom-bar {
+	width: 100%;
+	height: 1rem;
+	background-color: #fff;
+	border-top: solid 1px rgb(245, 245, 245);
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	justify-content: space-around;
+}
+.bar-btn-box {
+	text-align: center;
+	color: #000;
+	text-decoration: none;
+	/* margin: auto 0; */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 0.1rem 0;
+}
+.bar-btn-box .iconfont {
+	font-size: 0.45rem;
+}
+.bar-btn-box .text {
+	font-size: 0.18rem;
+}
+.bar-btn-box.active {
+	color: rgb(36, 165, 255);
+}
+
+/* 顶部栏 */
+.headBar {
+	position: relative;
+	left: 0;
+	top: 0;
+	min-width: 100%;
+	height: 0.8rem;
+	background-color: rgb(28, 32, 41);
+}
+
+.titleBtn-box {
+	color: #fff;
+	text-decoration: none;
+	font-size: 0.3rem;
+	float: left;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+    margin-left: 0.5rem;
+    transition: all 0.2s;
+}
+.titleBtn-box.active {
+    color: rgb(36, 165, 255);
+    font-size: 0.5rem;
+    margin-bottom: 0.1rem;
+}
+.test {
+    width: 1.5rem;
+    height: 0.5rem;
+    font-size: 0.2rem;
+}
+.headBar .header-line {
+    position: absolute;
+    width: 0.1rem;
+    height: 0.1rem;
+    background-color: rgb(36, 165, 255);
+    border-radius: 50%;
+    bottom: 0;
+    transition: all 0.2s;
+}
+.sortBtn {
+	position: absolute;
+	background-color: rgb(28, 32, 41);
+	width: 0.65rem;
+	height: 100%;
+	top: 0;
+	right: 0;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.sortBtn .iconfont {
+	color: #fff;
+	font-size: 0.3rem;
+}
