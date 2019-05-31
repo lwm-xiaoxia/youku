@@ -201,6 +201,9 @@ table {
 	height: 0.8rem;
 	background-color: rgb(28, 32, 41);
 }
+.headBar li {
+    display: inline-block;
+}
 
 .titleBtn-box {
 	color: #fff;
@@ -216,21 +219,17 @@ table {
 }
 .titleBtn-box.active {
     color: rgb(36, 165, 255);
-    font-size: 0.5rem;
-    margin-bottom: 0.1rem;
+    transform: scale(1.4);
+    margin-top: -0.1rem;
 }
-.test {
-    width: 1.5rem;
-    height: 0.5rem;
-    font-size: 0.2rem;
-}
+
 .headBar .header-line {
     position: absolute;
     width: 0.1rem;
     height: 0.1rem;
     background-color: rgb(36, 165, 255);
     border-radius: 50%;
-    bottom: 0;
+    bottom: 0.1rem;
     transition: all 0.2s;
 }
 .sortBtn {
@@ -248,4 +247,131 @@ table {
 .sortBtn .iconfont {
 	color: #fff;
 	font-size: 0.3rem;
+}
+
+/* 侧栏频道 */
+.channel {
+    position: fixed;
+    width: 6.8rem;
+    height: 100%;
+    background-color: #fff;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    overflow-y: scroll;
+    padding-top: 0.85rem;
+}
+.channel-enter {
+    transform: translateX(-100%);
+}
+.channel-enter-active {
+    transition: all 0.3s;
+    transform: translateX(0);
+}
+.channel-exit {
+    transform: translateX(0);
+}
+.channel-exit-active {
+    transition: all 0.3s;
+    transform: translateX(-100%);
+}
+.channel-header {
+    height: 0.85rem;
+    width: 6.8rem;
+    border-bottom: solid 0.01rem rgb(238, 238, 238);
+    display: flex;
+    justify-content: space-between;
+    line-height: 0.85rem;
+    padding: 0 0.3rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+.channel-header .title {
+    font-size: 0.3rem
+}
+.channel-header .administration {
+    font-size: 0.25rem;
+}
+.channel-header .finish {
+    font-size: 0.25rem;
+    color: rgb(36, 165, 255);
+}
+.channel-header .cancel {
+    font-size: 0.25rem;
+    color: rgb(36, 165, 255);
+}
+.channel-list {
+    padding: 0 0.3rem;
+}
+.channel-list-title {
+    display: flex;
+    justify-content: space-between;
+}
+.channel-list-title .text {
+    height: 1rem;
+    font-size: 0.3rem;
+    font-weight: bold;
+    line-height: 1rem;
+}
+.channel-list-title .tip {
+    height: 1rem;
+    line-height: 1rem;
+    font-size: 0.25rem;
+    color: rgba(0, 0, 0, 0.6);
+}
+.channel-list-body {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.ClassifyBox {
+    position: relative;
+    display: inline-block;
+    width: 1.95rem;
+    height: 1.95rem;
+    /* background-color:rgb(10, 182, 203); */
+    margin:  0.1rem 0;
+    border-radius: 0.1rem;
+    text-decoration: none;
+    color: #fff;
+}
+.ClassifyBox .text {
+    position: absolute;
+    font-size: 0.25rem;
+    left: 0.15rem;
+    top: 0.15rem;
+}
+.ClassifyBox .iconfont {
+    position: absolute;
+    font-size: 0.4rem;
+    bottom: 0.15rem;
+    right: 0.15rem;
+}
+
+/*侧滑栏遮罩层  */
+.channel-mark {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 999;
+}
+.mark-enter {
+    opacity: 0;
+}
+.mark-enter-active {
+    transition: all 0.3s;
+    opacity: 1;
+}
+.mark-exit {
+    opacity: 1;
+}
+.mark-exit-active {
+    transition: all 0.3s;
+    opacity: 0;
 }

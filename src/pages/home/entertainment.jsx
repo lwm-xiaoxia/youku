@@ -1,14 +1,15 @@
 import React from 'react';
 import { Route, NavLink, Redirect, Switch } from "react-router-dom";
+import { EventEmitter } from 'events';
 
-class onePunch extends React.Component {
+class Entertainment extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <p>onePunch</p>
+                <p>娱乐</p>
             </React.Fragment>
         )
     }
 }
 
-export default onePunch;
+export default EventEmitter;

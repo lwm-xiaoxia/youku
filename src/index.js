@@ -1,3 +1,8 @@
+/**
+ * @file 改应用的入口主文件
+ * @author lwm
+ */
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter} from 'react-router-dom';

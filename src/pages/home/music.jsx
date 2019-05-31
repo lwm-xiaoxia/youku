@@ -1,14 +1,14 @@
 import React from 'react';
 import { Route, NavLink, Redirect, Switch } from "react-router-dom";
 
-class Year extends React.Component {
+class Comic extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <p>yuer</p>
+                <p>音乐</p>
             </React.Fragment>
         )
     }
 }
 
-export default Year;
+export default Comic;
