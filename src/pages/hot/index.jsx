@@ -1,12 +1,16 @@
 import React from 'react';
 import {Route, NavLink, Redirect, Switch } from "react-router-dom";
-import homeLists from './data.js';
 import HeadBar from '../../components/headBar';
+import hotLists from './data';
 
-class Home extends React.Component {
+class Hot extends React.Component {
     state = {
-        routers: homeLists,
-        headBarParm: homeLists,
+        routers: hotLists,
+        headBarParm: hotLists,
+    }
+    componentWillMount() {
+        const {history} = this.props;
+        window.$ReactHistory = history
     }
     render() {
         const {match, history} = this.props;
@@ -16,14 +20,14 @@ class Home extends React.Component {
         return (
             <React.Fragment>
                 <HeadBar headBarParm={this.state.headBarParm} history={history}></HeadBar>
-                <p className="home">home</p>
+                <p className="home">hot</p>
                 <Switch>
                     {routers}
-                    <Redirect to={match.path + "/choice"}></Redirect>
+                    <Redirect to={match.path + "/recommend"}></Redirect>
                 </Switch>
             </React.Fragment>
         )
     }
 }
 
-export default Home;
+export default Hot;

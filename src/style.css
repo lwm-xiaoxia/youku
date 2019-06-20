@@ -219,16 +219,13 @@ table {
 }
 .titleBtn-box.active {
     color: rgb(36, 165, 255);
-    transform: scale(1.4);
-    margin-top: -0.1rem;
 }
 
 .headBar .header-line {
     position: absolute;
-    width: 0.1rem;
-    height: 0.1rem;
+    height: 0.05rem;
     background-color: rgb(36, 165, 255);
-    border-radius: 50%;
+    border-radius: 0.1rem;
     bottom: 0.1rem;
     transition: all 0.2s;
 }

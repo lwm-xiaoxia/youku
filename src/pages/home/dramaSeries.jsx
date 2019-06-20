@@ -5,7 +5,7 @@ class dramaSeries extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <p>dramaSeries</p>
+                <p>电视剧</p>
             </React.Fragment>
         )
     }

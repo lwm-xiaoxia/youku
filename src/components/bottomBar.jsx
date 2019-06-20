@@ -6,7 +6,7 @@ class BottomBar extends React.Component {
         btnParams: [
             {id: 0, className: 'iconshouye', text: '首页', path: '/home'},
             {id: 1, className: 'iconredian', text: '热点', path: '/hot'},
-            {id: 2, className: 'iconhuiyuan', text: '会员', path: '/member'},
+            // {id: 2, className: 'iconhuiyuan', text: '会员', path: '/member'},
             {id: 3, className: 'iconxingqiu', text: '星球', path: '/star'},
             {id: 4, className: 'iconwode', text: '我的', path: '/user'},
         ]

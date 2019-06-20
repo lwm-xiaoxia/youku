@@ -5,7 +5,7 @@ class Comic extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <p>动漫</p>
+                <p>直播</p>
             </React.Fragment>
         )
     }
